@@ -1,10 +1,17 @@
 #!/usr/bin/env python
 
+# Install web.py
+# sudo easy_install web.py
+
+# Install postgres
+# sudo apt-get install libpq-dev python-dev
+
 import web
 
-db = web.database(dbn='postgres', user='username', pw='password', db='dbname')
+db = web.database(dbn='postgres', user='jltichy', pw='password', db='dbname')
 
-CREATE TABLE todo (
+# CREATE TABLE
+todo (
   id serial primary key,
   title text,
   created timestamp default now(),
