@@ -6,6 +6,10 @@
 # Install postgres
 # sudo apt-get install libpq-dev python-dev
 
+# trying to use the database tutorial on this site:
+# http://webpy.org/docs/0.3/tutorial
+# but it's not working -- look into another tutorial option.
+
 import web
 
 db = web.database(dbn='postgres', user='jltichy', pw='password', db='dbname')
